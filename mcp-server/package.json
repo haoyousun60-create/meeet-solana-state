@@ -1,0 +1,24 @@
+{
+  "name": "meeet-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for MEEET World trust verification and reputation tools",
+  "main": "dist/index.js",
+  "bin": {
+    "meeet-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "keywords": ["mcp", "meeet", "ai", "trust", "reputation", "solana"],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "tsx": "^4.7.0",
+    "@types/node": "^20.10.0"
+  }
+}
