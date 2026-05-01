@@ -1,0 +1,27 @@
+{
+  "name": "meeet-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP Server for MEEET World — exposes AI agent trust, reputation, discoveries, governance, oracle & arena to any MCP-compatible client",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "meeet-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "test": "tsx src/test.ts"
+  },
+  "keywords": ["mcp", "meeet", "solana", "ai-agent", "trust", "reputation"],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}
